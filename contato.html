@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Desenvolvimento web: Cliente Semana 5</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="menu">
+    <a href="index.html">HOME</a> |
+    <a href="eventos.html">EVENTOS</a> |
+    <a href="contato.html">CONTATO</a> |
+    <a href="sobre.html">SOBRE</a> |
+    <a href="entrar.html">ENTRAR</a>
+  </div> 
+
+  <br>
+  <img src="Logo.jpg" alt="Logo IFSP"/>
+
+  <h1>Mande uma mensagem</h1>
+
+  <ul>
+    <form>
+      <li><a>Nome <input name="usuario" required></a></li>
+      <li><a>E-mail <input type="email" required></a></li>
+      <li><a>Telefone <input name="celular" type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required></a> (99) 99999-9999</li>
+      
+      <li><a>Assunto </a>
+        <select name="assunto" required>
+          <option value="" disabled selected>-- Selecione --</option>
+          <option value="v1">Reclamação</option>
+          <option value="v2">Sugestão</option>
+        </select>
+      </li>
+      
+      <li><a>Mensagem </a><textarea required></textarea></li>
+      
+      <li><fieldset>
+        <legend>Opções de Resposta</legend>
+        E-mail <input type="checkbox" value="email" name="lp" required>
+        Telefone <input type="checkbox" value="telefone" name="lp" required>
+      </fieldset></li>
+      
+      <li><input type="submit" value="Enviar"/></li>
+    </form>
+  </ul>
+  
+  <div class="rodapé">
+    <br>
+    <a href="https://www.facebook.com/ifsppirituba">
+      <img src="facebook.png" alt="Ícone Facebook" width="40"/>
+    </a>
+
+    <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
